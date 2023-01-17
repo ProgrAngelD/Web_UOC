@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Catalogo</title>
+    <meta charset="UTF-8">
+    <link href="css/estilos.css" rel="stylesheet">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/gm.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Distintos divs para la colocacion de botones en el encabezado para el movil -->
+        <div class="menu_movil">
+            <div id="menu_lateral_movil">
+                <a href="#" class="btn_menu"><img src="images/Boton.png" alt=""></a>
+            </div>
+            <div id="titulo_movil">
+                <h1>Catalogo</h1>
+            </div>
+            <div id="logo_movil">
+                <a href="Index.html"><img src="images/logo.png" class="logo" alt=""></a>
+            </div>
+        </div>
+        <!-- Distintos divs para la colocacion de botones en el encabezado para la web-->
+        <div class="menu_web">
+            <div id="logo_web">
+                <a href="Index.html"><img src="images/logo.png" class="logo" alt=""></a>
+            </div>
+            <div id="titulo_web">
+                <h1>Catalogo</h1>
+            </div>
+            <div id="inicio_sesion">
+                <a href="#" id="registro">Registro</a>
+                <a href="#" id="inicio_se">Inicio Sesion</a>
+            </div>
+
+        </div>
+        <!-- Menu de navegacion tanto para movil como para ordenador -->
+        <nav>
+            <ul>
+                <li class="li_btn_menu"> <a href="#" class="btn_menu"><img src="images/Boton.png" alt=""></a></li>
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="#">COMO FUNCIONA?</a></li>
+                <li><a href="Quienes_Somos.html">QUIENES SOMOS?</a></li>
+                <li><a href="Apuntate.html">APUNTATE</a></li>
+                <li><a href="#">DONDE ESTAMOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+
+            </ul>
+        </nav>
+    </header>
+  
+    <main class="main_catalogo">
+        <!-- Creacion de main con varios div y un aside. El titulo inicial tiene un select como medida de filtro rapida de relevancia
+             Con el aside colocado en el lateral a traves de css lo utilizamos de filtro mas profundo -->
+        <div class="titulo_catalogo">
+            <h2>General</h2>
+            <select>
+                <option>Relevancia</option>
+                <option>Recientes</option>
+                <option>Valorados</option>
+            </select>
+        </div>
+        <aside>
+            <h3 class="titulo_filtro">Filtros</h3>
+            <div class="filtro">
+                <select>
+                    <option>Tipo de objeto</option>
+                    <option>Manualidades</option>
+                    <option>Electrodomesticos</option>
+                    <option>Herramientas</option>
+                </select>
+                <select>
+                    <option>Disponibilidad</option>
+                    <option>Todos</option>
+                    <option>Alquilados</option>
+                    <option>Posibilidad de alquilar</option>
+                </select>
+                <select>
+                    <option>Estado del objeto</option>
+                    <option>Perfecto</option>
+                    <option>Utilizado</option>
+                    <option>Bastante usado</option>
+                </select>
+            </div>
+        </aside>
+        <!-- Este div a traves el archivo gm.js instanciamos los distintos objetos del catalogo y lo colocamos en el div de lista_objetos. Como punto final de la instancia de los objetos
+        se instancia el boton para poder pasar pagina adelante y atras del catalogo -->
+        <div class="padre_objetos">
+            <div class="lista_objetos">
+      
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Pie de pagina con sus distintos apartados ademas de tener dos logos uno para el ordenador y otro para movil -->
+        <div class="logo_inf">
+            <a href="Index.html"><img src="images/logo.png" class="logo" alt=""></a>
+        </div>
+        <div class="nuestra_empresa">
+            <ul>
+                <li>
+                    <h2>Nuestra Empresa</h2>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="Quienes_Somos.html">Quienes somos?</a></li>
+                        <li><a href="#">Donde estamos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="unete">
+            <ul>
+                <li>
+                    <h2>Unete</h2>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">Como funciona?</a></li>
+                        <li><a href="Catalogo.html">Catalogo</a></li>
+                        <li><a href="Apuntate.html">Apuntate</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="comunidad">
+            <ul>
+                <li>
+                    <h2>Comunidad</h2>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <td><a href="#"><img src="images/What.png" alt=""></a></td>
+                            <td><a href="#"><img src="images/Face.png" alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><img src="images/Inst.png" alt=""></a></td>
+                            <td><a href="#"><img src="images/Twit.png" alt=""></a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+
+        </div>
+        <div class="logo_inf_web">
+            <a href="Index.html" class="logo"><img src="images/logo.png" class="logo" alt=""></a>
+        </div>
+    </footer>
+</body>
+
+</html>
