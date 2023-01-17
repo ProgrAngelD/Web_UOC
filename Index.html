@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <link href="css/estilos.css" rel="stylesheet">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/gm.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- Distintos divs para la colocacion de botones en el encabezado para el movil -->
+        <div class="menu_movil">
+            <div id="menu_lateral_movil">
+                <a href="#" class="btn_menu"><img src="images/Boton.png" alt="menu lateral"></a>
+            </div>
+            <div id="titulo_movil">
+                <h1>Inicio</h1>
+            </div>
+            <div id="logo_movil">
+                <a href="#"><img src="images/logo.png" class="logo" alt="logotipo"></a>
+            </div>
+        </div>
+        <!-- Distintos divs para la colocacion de botones en el encabezado para la web-->
+        <div class="menu_web">
+            <div id="logo_web">
+                <a href="#"><img src="images/logo.png" class="logo" alt="logotipo"></a>
+            </div>
+            <div id="titulo_web">
+                <h1>Inicio</h1>
+            </div>
+            <div id="inicio_sesion">
+                <a href="#" id="registro">Registro</a>
+                <a href="#" id="inicio_se">Inicio Sesion</a>
+            </div>
+
+        </div>
+        <!-- Menu de navegacion tanto para movil como para ordenador -->
+        <nav>
+            <ul>
+                <li class="li_btn_menu"> <a href="#" class="btn_menu"><img src="images/Boton.png" alt="Menu Lateral"></a></li>
+                <li><a href="#">COMO FUNCIONA?</a></li>
+                <li><a href="Catalogo.html">CATALOGO</a></li>
+                <li><a href="Apuntate.html">APUNTATE</a></li>
+                <li><a href="Quienes_Somos.html">QUIENES SOMOS?</a></li>
+                <li><a href="#">DONDE ESTAMOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main donde nos encontramos 3 tipos de articulos separados cada uno para poder diferenciarlos de forma correcta y sus id y classes especificas para modificar en css -->
+        <section id="inicio_section">
+            <article class="introduccion">
+                <h2>Introduccion</h2>
+                <p>
+                    Anímate a alquilar objetos a través de nuestra biblioteca pensada para reutilizar artículos
+                    que no se usan por las casas y evitando un gasto mayor tanto para el bolsillo como para el
+                    medioambiente. ¡Unete a ayudar al mundo!!!
+                </p>
+            </article>
+            <article class="atajo">
+                <div><a href="#"><img src="images/funciona.jpg" alt="accede al apartado Como Funciona"></a>
+                    <p>COMO <br>FUNCIONA</p>
+                </div>
+                <div><a href="Catalogo.html"><img src="images/catalogo.jpg" alt="accede al apartado Catalogo"> </a>
+                    <p>CATALOGO</p>
+                </div>
+                <div><a href="Apuntate.html"><img src="images/apuntate.jpg" alt="accede al apartado Apuntate"> </a>
+                    <p>APUNTATE</p>
+                </div>
+                <div><a href="#"><img src="images/contacto.jpg" alt="accede al apartado Contacto"> </a>
+                    <p>CONTACTO</p>
+                </div>
+            </article>
+            <article class="boletin">
+                <h2>Boletin</h2>
+                <div class="datos_boletin">
+                    <div class="mensaje">
+                        ¡Apúntate al boletín semanal para enterarte de todas las novedades y productos disponibles!!
+                    </div>
+                    <div class="datos_correo">
+                        <form>
+                            <label for="email">Correo </label>
+                            <input type="email" id="email" name="email" required placeholder="Correo Electronico">
+                            <label for="enviar">enviar </label>
+                            <input type="submit" id="enviar" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <!-- Pie de pagina con sus distintos apartados ademas de tener dos logos uno para el ordenador y otro para movil -->
+        <div class="logo_inf">
+            <a href="#"><img src="images/logo.png" class="logo" alt="logo"></a>
+        </div>
+        <div class="nuestra_empresa">
+            <ul>
+                <li>
+                    <h2>Nuestra Empresa</h2>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="Quienes_Somos.html">Quienes somos?</a></li>
+                        <li><a href="#">Donde estamos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="unete">
+            <ul>
+                <li>
+                    <h2>Unete</h2>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">Como funciona?</a></li>
+                        <li><a href="Catalogo.html">Catalogo</a></li>
+                        <li><a href="Apuntate.html">Apuntate</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="comunidad">
+            <ul>
+                <li>
+                    <h2>Comunidad</h2>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <td><a href="#"><img src="images/What.png" alt="whatssap"></a></td>
+                            <td><a href="#"><img src="images/Face.png" alt="Facebook"></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><img src="images/Inst.png" alt="Instagram"></a></td>
+                            <td><a href="#"><img src="images/Twit.png" alt="Twitter"></a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+
+        </div>
+        <div class="logo_inf_web">
+            <a href="#" class="logo"><img src="images/logo.png" class="logo" alt="Logo"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
