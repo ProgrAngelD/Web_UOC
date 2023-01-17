@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Apuntate</title>
+    <meta charset="UTF-8">
+    <link href="css/estilos.css" rel="stylesheet">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/gm.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Distintos divs para la colocacion de botones en el encabezado para el movil -->
+
+        <div class="menu_movil">
+            <div id="menu_lateral_movil">
+                <a href="#" class="btn_menu"><img src="images/Boton.png" alt="menu lateral" ></a>
+            </div>
+            <div id="titulo_movil">
+                <h1>Apuntate</h1>
+            </div>
+            <div id="logo_movil">
+                <a href="Index.html"><img src="images/logo.png"  class="logo" alt="logo"></a>
+            </div>
+        </div>
+        <!-- Distintos divs para la colocacion de botones en el encabezado para la web-->
+        <div class="menu_web">
+            <div id="logo_web">
+                <a href="Index.html" ><img src="images/logo.png" class="logo" alt="logo" ></a>
+            </div>
+            <div id="titulo_web">
+                <h1>Apuntate</h1>
+            </div>
+            <div id="inicio_sesion">
+                <a href="#" id="registro">Registro</a>
+                <a href="#" id="inicio_se">Inicio Sesion</a>
+            </div>
+
+        </div>
+        <!-- Menu de navegacion tanto para movil como para ordenador -->
+        <nav>
+            <ul>
+                <li class="li_btn_menu"> <a href="#" class="btn_menu"><img src="images/Boton.png" alt="menu lateral" ></a></li>
+                <li><a href="Index.html">INICIO</a></li>
+                <li><a href="#">COMO FUNCIONA?</a></li>
+                <li><a href="Catalogo.html">CATALOGO</a></li>
+                <li><a href="Quienes_Somos.html">QUIENES SOMOS?</a></li>
+                <li><a href="#">DONDE ESTAMOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Formulario de registro para enviarnos los datos y todo requerido para no dejar ningun apartado vacio ademas de la vinculacion del label con el input
+        de cada uno a traves del for y el id -->
+        <section id="apuntate_section">
+            <div class="formulario">
+                <form>
+                    <div class="nombre_apellido">
+                        <div class="bloque_formulario">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="user_name" required>
+                        </div>
+                        <div class="bloque_formulario">
+                            <label for="surname">Apellido</label>
+                            <input type="text" id="surname" name="user_surname" required>
+                        </div>
+                    </div>
+                    <div class="bloque_formulario">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="user_email" required>
+                    </div>
+                    <div class="bloque_formulario">
+                        <label for="mobile">Teléfono</label>
+                        <input type="tel" id="mobile" name="user_mobile" required>
+                    </div>
+                    <div class="bloque_formulario">
+                        <label for="city">Ciudad</label>
+                        <input type="text" id="city" name="user_city" required>
+                    </div>
+                    <div class="bloque_formulario">
+                        <label for="C.Postal">Cosdigo Postal</label>
+                        <input type="number" id="C.Postal" name="user_C.Postal" required>
+                    </div>
+                    <div class="bloque_formulario">
+                        <label for="Street">Direccion</label>
+                        <input type="text" id="Street" name="user_Street" required>
+                    </div>
+                    <div class="bloque_formulario">
+                        <label for="dni">DNI/Passaporte</label>
+                        <input type="text" id="dni" name="user_dni" required>
+                    </div>
+                    <div class="terminos">
+                        <label for="check_terminos">terminos</label>
+                        <input type="checkbox" id="check_terminos" alt="accepto de terminos"required>Acepta los términos de uso*
+                    </div>
+                    <div class="enviar">
+                        <input type="submit" id="enviar" value="Enviar">
+
+                    </div>
+                    <div class="form_mensaje">
+                        Nos pondremos en contacto con usted en las próximas 24/48 h luego de enviar sus datos
+                        correctamente.
+                        En caso de que no nos pongamos en contacto por favor póngase en contacto con nosotros.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Pie de pagina con sus distintos apartados ademas de tener dos logos uno para el ordenador y otro para movil -->
+        <div class="logo_inf">
+            <a href="#"><img src="images/logo.png" class="logo" alt="logo"></a>
+        </div>
+        <div class="nuestra_empresa">
+            <ul>
+                <li>
+                    <h2>Nuestra Empresa</h2>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="Quienes_Somos.html">Quienes somos?</a></li>
+                        <li><a href="#">Donde estamos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="unete">
+            <ul>
+                <li>
+                    <h2>Unete</h2>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#">Como funciona?</a></li>
+                        <li><a href="Catalogo.html">Catalogo</a></li>
+                        <li><a href="Apuntate.html">Apuntate</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="comunidad">
+            <ul>
+                <li>
+                    <h2>Comunidad</h2>
+                </li>
+                <li>
+                    <table>
+                        <tr>
+                            <td><a href="#"><img src="images/What.png" alt="whatssap"></a></td>
+                            <td><a href="#"><img src="images/Face.png" alt="Facebook"></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><img src="images/Inst.png" alt="Instagram"></a></td>
+                            <td><a href="#"><img src="images/Twit.png" alt="Twitter"></a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+
+        </div>
+        <div class="logo_inf_web">
+            <a href="#" class="logo"><img src="images/logo.png" class="logo" alt="Logo"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
