@@ -61,9 +61,9 @@
              Con el aside colocado en el lateral a traves de css lo utilizamos de filtro mas profundo -->
         <div class="titulo_catalogo">
             <h2>General</h2>
-            <select>
-                <label for="relevancia">
-                <option id="relevancia" name="relevancia">Relevancia</option>
+            <label for="relevancia"></label>
+            <select id="relevancia" name="relevancia">
+                <option>Relevancia</option>
                 <option>Recientes</option>
                 <option>Valorados</option>
             </select>
@@ -71,19 +71,22 @@
         <aside>
             <h3 class="titulo_filtro">Filtros</h3>
             <div class="filtro">
-                <select>
+                  <label for="Tipo"></label>
+                 <select id="Tipo" name="Tipo">
                     <option>Tipo de objeto</option>
                     <option>Manualidades</option>
                     <option>Electrodomesticos</option>
                     <option>Herramientas</option>
                 </select>
-                <select>
+                  <label for="Disponibilidad"></label>
+                 <select id="Disponibilidad" name="Disponibilidad">
                     <option>Disponibilidad</option>
                     <option>Todos</option>
                     <option>Alquilados</option>
                     <option>Posibilidad de alquilar</option>
                 </select>
-                <select>
+                  <label for="Estado"></label>
+                 <select id="Estado" name="Estado">
                     <option>Estado del objeto</option>
                     <option>Perfecto</option>
                     <option>Utilizado</option>
